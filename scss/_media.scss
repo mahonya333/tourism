@@ -1,0 +1,395 @@
+@media(max-width: 1500px){
+    .contacts__map{
+        width: 850px;
+    }
+}
+@media(max-width: 1200px){
+    .contacts__map{
+        width: 650px;
+    }
+    .contacts__info {
+        padding-bottom: 25px;
+    }
+}
+@media(max-width: 1100px){
+    .header__top .header__navigation .header__btn-menu{
+        display: block;
+    }
+    .header__navigation {
+        ul{
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-top: 20px;
+            z-index: 50;
+        }
+        li{
+            display: block;
+            text-align: center;
+        }
+    }  
+    .header__top .header__navigation li + li{
+        margin-left: 0;
+        margin-top: 1px;
+    }
+    .header__top .header__navigation li a{
+        border-radius: 0%;
+        display: block;
+        background-color: $orange;
+    }
+    .travels__filter{
+        padding: 20px 21px 35px 21px;
+    }
+    .travels__filter-item.filter-item__from{
+        width: 273px;
+    }
+    .travels__items{
+        margin-left: -20px;
+        margin-bottom: 20px;
+    }
+    .travels__item{
+        flex-basis: calc(50% - 20px);
+        margin-left: 20px;
+    }
+
+    .services__item{
+        flex-basis: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+    .directions__items{
+        margin-left: -20px;
+    }
+    .directions__item{
+        flex-basis: calc(50% - 20px);
+        margin-left: 20px;
+    }
+    
+}
+@media(max-width: 1020px){
+    .header{
+        min-height: 800px;
+    }
+    .header__title{
+        font-size: 40px;
+    }
+    .travels__filter-category{
+        display: flex;
+        justify-content: center;
+    }
+    .travels__filter-items{
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .travels__filter-item{
+        margin-bottom: 20px;
+    }
+    .travels__filter-item label{
+        margin-bottom: 5px;
+    }
+    .travels__filter-item.filter-item__date span{
+        top: 37px;
+    }
+    .travels__filter-btn{
+        margin-top: 21px;
+    }
+    .feedback__form {
+        form{
+            justify-content: space-around;
+        }
+        &-name,
+        &-phone{
+            width: 40%;
+            margin-right: 0;
+        }
+    }
+    .reviews__slider-inner{
+        padding-top: 10px;
+    }
+    .reviews__slider-link a{
+        bottom: 10px;
+        right: 35px;
+    }
+    .contacts__info{
+        display: flex;
+        justify-content: space-between;
+ 
+    }
+    .contacts__wrapper{
+        padding-bottom: 430px;
+    }
+    .contacts__map{
+        width: 100%;
+        height: 430px;
+    }
+}
+
+@media(max-width: 950px){
+    .reviews__slider-wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .reviews__slider-inner{
+        padding-bottom: 45px;
+    }
+    .reviews__slider-link a{
+        padding: 10px 25px;
+    }
+    .reviews__slider-main{
+        margin-bottom: 10px;
+    }
+    .reviews__slider-item{
+        line-height: 21px;
+    }
+}
+
+@media(max-width: 800px){
+    .travels__filter-items{
+        margin-top: 25px;
+    }
+    .services__items{
+        padding: 30px 0px;
+    }
+        .header__title{
+        margin-top: 120px;
+    }
+}
+@media(max-width: 750px){
+    .header__title{
+        font-size: 35px;
+        line-height: 65px;
+    }
+    .travels__item{
+        flex-basis: 100%;
+    }
+
+    .directions__item{
+        flex-basis: 100%;
+    }
+    .subcsribe{
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .subcsribe__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .subcsribe__subtitle {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 45px;
+    }
+}
+@media(max-width: 700px){
+    .travels {
+        padding-bottom: 5px;
+    }
+    .feedback__form {
+        &-name,
+        &-phone{
+            width: 80%;
+        }
+    }
+    .subcsribe__form .subcsribe__form-email, 
+    .subcsribe__form .subcsribe__form-btn{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 650px){
+    .travels__filter-item.filter-item__from,
+    .travels__filter-item.filter-item__to{
+        width: 120px;
+    }
+    .travels__filter-item.filter-item__date{
+        width: 135px;
+    }
+    .travels__filter-item .jq-selectbox__select, .travels__filter-item input[type="text"]{
+        height: 25px;
+        line-height: 23px;
+    }
+    .travels__filter-item .jq-selectbox__trigger-arrow{
+        top: 10px;
+    }
+    .travels__filter-item.filter-item__date span{
+        right: 10px;
+        top: 25px;
+    }
+    .contacts__info-list li{
+        font-size: 14px;
+    }
+    .contacts__info .info-communication__title{
+        font-size: 16px;
+    }
+    .contacts{
+        padding-top: 20px;
+    }
+}
+@media(max-width: 600px){
+    .services__item{
+        flex-basis: 100%;
+    }
+    .feedback {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .feedback__title{
+        line-height: 35px;
+        font-size: 20px;
+    }
+    .feedback__subtitle {
+        margin-bottom: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .subcsribe__form-email,
+    .subcsribe__form-btn {
+        width: 80%;
+    }
+    .reviews__slider .slick-slide{
+        flex-wrap: wrap;
+    }
+    .reviews__slider-image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contacts__info{
+        flex-wrap: wrap;
+    }
+    .contacts__info-communication{
+        margin-right: 50px;
+    }
+
+}
+@media(max-width: 525px){
+    .title{
+        font-size: 24px;
+    }
+    .header{
+        min-height: 670px;
+    }
+    .header__title{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 115px;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .header__link{
+        margin-top: 40px;
+    }
+    .header__link a{
+        font-size: 20px;
+        padding: 18px 60px 18px;
+        border-radius: 28px;
+    }
+    .travels__filter-link{
+        font-size: 14px;
+    }
+    .travels__filter-link + .travels__filter-link{
+        margin-left: 30px;
+    }
+    .feedback__form {
+        &-name,
+        &-phone{
+            width: 100%;
+        }
+        .feedback__form input{
+            padding-left: 72px;
+        }
+    }
+    .reviews{
+        padding-bottom: 0;
+    }
+    .reviews__slider-inner{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .reviews__slider-link a{
+        right: 5px;
+        bottom: 5px;
+    }
+    .reviews__slider-comment{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer{
+        font-size: 16px;
+    }
+}
+@media(max-width: 450px){
+    .travels__filter{
+        padding: 20px 10px 20px 10px;
+    }
+    .travels__filter-link{
+        font-size: 12px;
+    }
+    .travels__filter-link + .travels__filter-link{
+        margin-left: 10px;
+    }
+    .travels__filter-item.filter-item__from,
+    .travels__filter-item.filter-item__to,
+    .travels__filter-item.filter-item__date{
+        width: 100%;
+    }
+    .travels__filter-items{
+        margin-top: 10px;
+    }
+    .travels__filter-item{
+        margin-bottom: 10px;
+    }
+    .travels__filter-btn {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .travels__filter{
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    .foter__socials a{
+        font-size: 17px;
+    }
+    .foter__socials a img{
+        height: 17px;
+    }
+}
+@media(max-width: 400px){
+    .header__title{
+        margin-top: 115px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .travels__filter-link{
+        font-size: 11px;
+    }
+    .reviews__slider-name{
+        font-size: 16px;
+    }
+    .contacts__info-list li{
+        font-size: 13px;
+    }
+    .footer {
+        font-size: 13px;
+    }
+    .foter__socials li + li {
+        margin-left: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1100px){
+    .header__navigation ul{
+        display: block !important;
+    }
+}
