@@ -1,3 +1,12 @@
+@include fontFace('CenturyGothic-regular', '../fonts/Century-Gothic/GOTHIC');
+@include fontFace('CenturyGothic-semiBold', '../fonts/Century-Gothic/GOTHICB');
+@include fontFace('CenturyGothic-semiBoldCoursive', '../fonts/Century-Gothic/GOTHICBI');
+@include fontFace('CenturyGothic-coursive', '../fonts/Century-Gothic/GOTHICI');
+
+@include fontFace('Roboto-black', '../fonts/Roboto/Robotoblack');
+
+@include fontFace('Impact-Regular', '../fonts/Impact/Impact-Regular');
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?3hohso');

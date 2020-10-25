@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing</title>
+    <title>Tourism</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
     <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
     <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
     <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
@@ -23,237 +22,306 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="content">
-            <header class="header">
+    <div class="site-wrapper">
+        <div class="site-content">
+            <!--             <header class="header bg-cover">
                 <div class="container">
-                    <div class="header__top">
-                        <div class="header__logo">
-                            <span class="header__logo-slogan">LOGOTYPE</span>
+                    <nav class="navigation">
+                        <div class="logo">
+                            <span class="logo__slogan">LOGOTYPE</span>
                         </div>
-                        <nav class="header__navigation">
-                            <div class="header__btn-menu">
-                                <span class="icon-menu"></span>
-                            </div>
-                            <ul>
-                                <li><a href="#">Пошук турів</a></li>
-                                <li><a href="#">Гарячі тури</a></li>
-                                <li><a href="#">Популярні напрямки</a></li>
-                                <li><a href="#">Відгуки</a></li>
-                                <li><a href="#">Контакти</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                        <button class="btn btn-burger-menu">
+                            <span class="icon-menu"></span>
+                        </button>
+                        <ul class="navigation__list">
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">Пошук турів</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">Гарячі тури</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">Популярні напрямки</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">Відгуки</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
                     <div class="header__content">
-                        <div class="header__title">
+                        <h1 class="header__title">
                             Широкий вибір туристичних напрямків
                             за кращими цінами!
-                        </div>
-                        <div class="header__link">
-                            <a href="#">Оберіть тур</a>
+                        </h1>
+                        <div class="header__tour-link-wrapper">
+                            <a class="header__tour-link" href="#">Оберіть тур</a>
                         </div>
                     </div>
                 </div>
-            </header>
+            </header> -->
 
-            <section class="travels">
+            <section class="travels" id="travel-tour">
                 <div class="container">
-                    <div class="travels__inner">
-                        <div class="travels__filter">
-                            <div class="travels__filter-category">
-                                <a class="travels__filter-link" href="#">Пакетні тури</a>
-                                <a class="travels__filter-link" href="#">Екскурсійні тури</a>
-                                <a class="travels__filter-link" href="#">чартери</a>
+
+                    <div class="travels__filter">
+                        <div class="travels__filter-category">
+                            <a class="travels__filter-link" href="#">Пакетні тури</a>
+                            <a class="travels__filter-link" href="#">Екскурсійні тури</a>
+                            <a class="travels__filter-link" href="#">чартери</a>
+                        </div>
+                        <div class="travels__filter-items">
+                            <div class="travels__filter-item filter-item__from">
+                                <label>Звідки</label>
+                                <select>
+                                    <option value="kiev">Київ</option>
+                                    <option value="chernihiv">Чернігів</option>
+                                    <option value="kharkiv">Харків</option>
+                                </select>
                             </div>
-                            <div class="travels__filter-items">
-                                <div class="travels__filter-item filter-item__from">
-                                    <label>Звідки</label>
+                            <div class="travels__filter-item filter-item__to">
+                                <label>Куди</label>
+                                <select>
+                                    <option value="chernihiv">Чернігів</option>
+                                    <option value="kiev">Київ</option>
+                                    <option value="kharkiv">Харків</option>
+                                </select>
+                            </div>
+                            <div class="travels__filter-item filter-item__date">
+                                <label>Дата вильоту</label>
+                                <input type="text" value="25.10 - 30.10">
+                                <span></span>
+                            </div>
+                            <div class="travels__filter-item filter-item__days">
+                                <label>Ночей</label>
+                                <div class="item__days-count">
+                                    <span>від</span>
                                     <select>
-                                        <option value="kiev">Київ</option>
-                                        <option value="chernihiv">Чернігів</option>
-                                        <option value="kharkiv">Харків</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                    <span>до</span>
+                                    <select>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="9">9</option>
                                     </select>
                                 </div>
-                                <div class="travels__filter-item filter-item__to">
-                                    <label>Куди</label>
-                                    <select>
-                                        <option value="chernihiv">Чернігів</option>
-                                        <option value="kiev">Київ</option>
-                                        <option value="kharkiv">Харків</option>
-                                    </select>
-                                </div>
-                                <div class="travels__filter-item filter-item__date">
-                                    <label>Дата вильоту</label>
-                                    <input type="text" value="25.10 - 30.10">
-                                    <span></span>
-                                </div>
-                                <div class="travels__filter-item filter-item__days">
-                                    <label>Ночей</label>
-                                    <div class="item__days-count">
-                                        <span>від</span>
-                                        <select>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="7">7</option>
-                                        </select>
-                                        <span>до</span>
-                                        <select>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="9">9</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <button class="travels__filter-btn" type="submit">Знайти</button>
+                            </div>
+                            <button class="btn travels__filter-btn" type="submit">Знайти</button>
+                        </div>
+                    </div>
+
+                    <h2 class="travels__title title">
+                        <span class="travels__title-text">Гарячі тури</span>
+                    </h2>
+
+                    <div class="travels__items">
+                        <div class="travels-item">
+                            <img class="travels-item__img" src="images/directions-item-img.jpg" alt="">
+
+                            <div class="travels-item__inner">
+                                <a class="travels-item__link" href="#">
+                                    Sharm in Amerein
+                                </a>
+
+                                <div class="travels-item__rate"></div>
+
+                                <ul class="travels-item__advantages">
+                                    <li class="travels-item__advantages-item travels-icon-dinner">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-dinner.png" alt="">
+                                        Все включено
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-airplane">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-airplane.png" alt="">
+                                        З Київа
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-calendar">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-calendar.png" alt="">
+                                        29 вер. на 7 днів
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="travels-item__price">
+                                275 $ <br>
+                                <span class="travels-item__price-info">за одного</span>
                             </div>
                         </div>
-                        <div class="travels__title title">
-                            <span>Гарячі тури</span>
+                        <div class="travels-item">
+                            <img class="travels-item__img" src="images/directions-item-img.jpg" alt="">
+
+                            <div class="travels-item__inner">
+                                <a class="travels-item__link" href="#">
+                                    Sharm in Amerein
+                                </a>
+
+                                <div class="travels-item__rate"></div>
+
+                                <ul class="travels-item__advantages">
+                                    <li class="travels-item__advantages-item travels-icon-dinner">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-dinner.png" alt="">
+                                        Все включено
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-airplane">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-airplane.png" alt="">
+                                        З Київа
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-calendar">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-calendar.png" alt="">
+                                        29 вер. на 7 днів
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="travels-item__price">
+                                275 $ <br>
+                                <span class="travels-item__price-info">за одного</span>
+                            </div>
                         </div>
-                        <div class="travels__items">
-                            <div class="travels__item">
-                                <div class="travels__item-img">
+                        <div class="travels-item">
+                            <img class="travels-item__img" src="images/directions-item-img.jpg" alt="">
 
-                                </div>
-                                <div class="travels__item-inner">
-                                    <div class="travels__item-name">
-                                        Sharm in Amerein
-                                    </div>
-                                    <div class="travels__item-rate"></div>
-                                    <div class="travels__item-info">
-                                        <div class="travels__item-advantages">
-                                            <ul>
-                                                <li class="travels-icon-dinner">Все включено</li>
-                                                <li class="travels-icon-airplane">З Київа</li>
-                                                <li class="travels-icon-calendar">29 вер. на 7 днів</li>
-                                            </ul>
-                                        </div>
-                                        <div class="travels__item-price">
-                                            275 $ <br>
-                                            <span>за одного</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="travels-item__inner">
+                                <a class="travels-item__link" href="#">
+                                    Sharm in Amerein
+                                </a>
+
+                                <div class="travels-item__rate"></div>
+
+                                <ul class="travels-item__advantages">
+                                    <li class="travels-item__advantages-item travels-icon-dinner">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-dinner.png" alt="">
+                                        Все включено
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-airplane">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-airplane.png" alt="">
+                                        З Київа
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-calendar">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-calendar.png" alt="">
+                                        29 вер. на 7 днів
+                                    </li>
+                                </ul>
+
                             </div>
-                            <div class="travels__item">
-                                <div class="travels__item-img">
-
-                                </div>
-                                <div class="travels__item-inner">
-                                    <div class="travels__item-name">
-                                        Sharm in Amerein
-                                    </div>
-                                    <div class="travels__item-rate"></div>
-                                    <div class="travels__item-info">
-                                        <div class="travels__item-advantages">
-                                            <ul>
-                                                <li class="travels-icon-dinner">Все включено</li>
-                                                <li class="travels-icon-airplane">З Київа</li>
-                                                <li class="travels-icon-calendar">29 вер. на 7 днів</li>
-                                            </ul>
-                                        </div>
-                                        <div class="travels__item-price">
-                                            275 $ <br>
-                                            <span>за одного</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="travels-item__price">
+                                275 $ <br>
+                                <span class="travels-item__price-info">за одного</span>
                             </div>
-                            <div class="travels__item">
-                                <div class="travels__item-img">
+                        </div>
+                        <div class="travels-item">
+                            <img class="travels-item__img" src="images/directions-item-img.jpg" alt="">
 
-                                </div>
-                                <div class="travels__item-inner">
-                                    <div class="travels__item-name">
-                                        Sharm in Amerein
-                                    </div>
-                                    <div class="travels__item-rate"></div>
-                                    <div class="travels__item-info">
-                                        <div class="travels__item-advantages">
-                                            <ul>
-                                                <li class="travels-icon-dinner">Все включено</li>
-                                                <li class="travels-icon-airplane">З Київа</li>
-                                                <li class="travels-icon-calendar">29 вер. на 7 днів</li>
-                                            </ul>
-                                        </div>
-                                        <div class="travels__item-price">
-                                            275 $ <br>
-                                            <span>за одного</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="travels-item__inner">
+                                <a class="travels-item__link" href="#">
+                                    Sharm in Amerein
+                                </a>
+
+                                <div class="travels-item__rate"></div>
+
+                                <ul class="travels-item__advantages">
+                                    <li class="travels-item__advantages-item travels-icon-dinner">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-dinner.png" alt="">
+                                        Все включено
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-airplane">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-airplane.png" alt="">
+                                        З Київа
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-calendar">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-calendar.png" alt="">
+                                        29 вер. на 7 днів
+                                    </li>
+                                </ul>
+
                             </div>
-                            <div class="travels__item">
-                                <div class="travels__item-img">
-
-                                </div>
-                                <div class="travels__item-inner">
-                                    <div class="travels__item-name">
-                                        Sharm in Amerein
-                                    </div>
-                                    <div class="travels__item-rate"></div>
-                                    <div class="travels__item-info">
-                                        <div class="travels__item-advantages">
-                                            <ul>
-                                                <li class="travels-icon-dinner">Все включено</li>
-                                                <li class="travels-icon-airplane">З Київа</li>
-                                                <li class="travels-icon-calendar">29 вер. на 7 днів</li>
-                                            </ul>
-                                        </div>
-                                        <div class="travels__item-price">
-                                            275 $ <br>
-                                            <span>за одного</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="travels-item__price">
+                                275 $ <br>
+                                <span class="travels-item__price-info">за одного</span>
                             </div>
-                            <div class="travels__item">
-                                <div class="travels__item-img">
+                        </div>
+                        <div class="travels-item">
+                            <img class="travels-item__img" src="images/directions-item-img.jpg" alt="">
 
-                                </div>
-                                <div class="travels__item-inner">
-                                    <div class="travels__item-name">
-                                        Sharm in Amerein
-                                    </div>
-                                    <div class="travels__item-rate"></div>
-                                    <div class="travels__item-info">
-                                        <div class="travels__item-advantages">
-                                            <ul>
-                                                <li class="travels-icon-dinner">Все включено</li>
-                                                <li class="travels-icon-airplane">З Київа</li>
-                                                <li class="travels-icon-calendar">29 вер. на 7 днів</li>
-                                            </ul>
-                                        </div>
-                                        <div class="travels__item-price">
-                                            275 $ <br>
-                                            <span>за одного</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="travels-item__inner">
+                                <a class="travels-item__link" href="#">
+                                    Sharm in Amerein
+                                </a>
+
+                                <div class="travels-item__rate"></div>
+
+                                <ul class="travels-item__advantages">
+                                    <li class="travels-item__advantages-item travels-icon-dinner">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-dinner.png" alt="">
+                                        Все включено
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-airplane">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-airplane.png" alt="">
+                                        З Київа
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-calendar">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-calendar.png" alt="">
+                                        29 вер. на 7 днів
+                                    </li>
+                                </ul>
+
                             </div>
-                            <div class="travels__item">
-                                <div class="travels__item-img">
+                            <div class="travels-item__price">
+                                275 $ <br>
+                                <span class="travels-item__price-info">за одного</span>
+                            </div>
+                        </div>
+                        <div class="travels-item">
+                            <img class="travels-item__img" src="images/directions-item-img.jpg" alt="">
 
-                                </div>
-                                <div class="travels__item-inner">
-                                    <div class="travels__item-name">
-                                        Sharm in Amerein
-                                    </div>
-                                    <div class="travels__item-rate"></div>
-                                    <div class="travels__item-info">
-                                        <div class="travels__item-advantages">
-                                            <ul>
-                                                <li class="travels-icon-dinner">Все включено</li>
-                                                <li class="travels-icon-airplane">З Київа</li>
-                                                <li class="travels-icon-calendar">29 вер. на 7 днів</li>
-                                            </ul>
-                                        </div>
-                                        <div class="travels__item-price">
-                                            275 $ <br>
-                                            <span>за одного</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="travels-item__inner">
+                                <a class="travels-item__link" href="#">
+                                    Sharm in Amerein
+                                </a>
+
+                                <div class="travels-item__rate"></div>
+
+                                <ul class="travels-item__advantages">
+                                    <li class="travels-item__advantages-item travels-icon-dinner">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-dinner.png" alt="">
+                                        Все включено
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-airplane">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-airplane.png" alt="">
+                                        З Київа
+                                    </li>
+                                    <li class="travels-item__advantages-item travels-icon-calendar">
+                                        <img class="travels-item__advantages-item-icon"
+                                            src="images/travels-icon-calendar.png" alt="">
+                                        29 вер. на 7 днів
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="travels-item__price">
+                                275 $ <br>
+                                <span class="travels-item__price-info">за одного</span>
                             </div>
                         </div>
                     </div>
@@ -262,235 +330,218 @@
 
             <section class="services">
                 <div class="container">
-                    <div class="services__title title">
+                    <h2 class="title">
                         Туристичні послуги
-                    </div>
-                    <div class="services__items">
-                        <div class="services__item services__item-flights">
-                            <div class="services__item-title">
+                    </h2>
+                    <div class="services-items">
+                        <a class="services-item services-item--flights bg-cover" href="#">
+                            <h4 class="services-item__title">
                                 Авіабілети
-                            </div>
-                        </div>
-                        <div class="services__item services__item-insurance">
-                            <div class="services__item-title">
+                            </h4>
+                        </a>
+                        <a class="services-item services-item--insurance bg-cover" href="#">
+                            <h4 class="services-item__title">
                                 Страхування
-                            </div>
-                        </div>
-                        <div class="services__item services__item-travelSIM">
-                            <div class="services__item-title">
+                            </h4>
+                        </a>
+                        <a class="services-item services-item--travelSIM bg-cover" href="#">
+                            <h4 class="services-item__title">
                                 Травелсім
-                            </div>
-                        </div>
-                        <div class="services__item services__item-visaSupport">
-                            <div class="services__item-title">
+                            </h4>
+                        </a>
+                        <a class="services-item services-item--visaSupport bg-cover" href="#">
+                            <h4 class="services-item__title">
                                 Візова <br>
                                 підтримка
-                            </div>
-                        </div>
+                            </h4>
+                        </a>
                     </div>
                 </div>
             </section>
 
             <section class="feedback">
                 <div class="container">
-                    <div class="feedback__inner">
-                        <div class="feedback__title">
-                            Потрібна допомога в підборі туру?
-                        </div>
-                        <div class="feedback__subtitle">
-                            Залиште запит і наші менеджери підберуть для Вас найкращий тур
-                        </div>
-                        <div class="feedback__form">
-                            <form>
-                                <div class="feedback__form-name">
-                                    <input type="text" placeholder="Ваше ім’я" required>
-                                </div>
-                                <div class="feedback__form-phone">
-                                    <input type="tel" placeholder="Ваш телефон" required>
-                                </div>
-                                <input type="submit" value="Відправити">
-                            </form>
-                        </div>
+                    <h2 class="feedback__title">
+                        Потрібна допомога в підборі туру?
+                    </h2>
+                    <p class="feedback__subtitle-text">
+                        Залиште запит і наші менеджери підберуть для Вас найкращий тур
+                    </p>
+                    <div class="feedback__form">
+                        <form class="feedback-form">
+                            <div class="feedback-form__name">
+                                <input class="feedback-form__input" type="text" placeholder="Ваше ім’я" required>
+                            </div>
+                            <div class="feedback-form__phone">
+                                <input class="feedback-form__input" type="tel" placeholder="Ваш телефон" required>
+                            </div>
+                            <button class="btn feedback-form-btn" type="submit">Відправити</button>
+                        </form>
                     </div>
                 </div>
             </section>
 
             <section class="directions">
                 <div class="container">
-                    <div class="directions__title title">
+                    <h2 class="title">
                         Популярні напрямки
-                    </div>
+                    </h2>
                     <div class="directions__items">
-                        <div class="directions__item">
-                            <div class="directions__item-img"></div>
-                            <div class="directions__item-inner">
-                                <div class="directions__item-info">
-                                    <div class="directions__item-title">
+                        <a class="directions-item" href="#">
+                            <img class="directions-item__img" src="images/directions-item-img.jpg" alt="">
+                            <div class="directions-item__inner">
+                                <div class="directions-item__info">
+                                    <h4 class="directions-item__title">
                                         Греція
-                                    </div>
-                                    <div class="directions__item-advantages">
+                                    </h4>
+                                    <div class="directions-item__advantages">
                                         Європейський комфорт
                                     </div>
                                 </div>
-                                <div class="deriction__item-content">
-                                    <div class="directions__item-text">
-                                        Вас чекають місця неймовірної краси
-                                    </div>
-                                    <div class="directions__item-price">
-                                        Від 275 $
-                                    </div>
-                                </div>
+                                <p class="directions-item__text">
+                                    Вас чекають місця неймовірної краси
+                                </p>
+                                <span class="directions-item__price">
+                                    Від 275 $
+                                </span>
                             </div>
-                        </div>
-                        <div class="directions__item">
-                            <div class="directions__item-img"></div>
-                            <div class="directions__item-inner">
-                                <div class="directions__item-info">
-                                    <div class="directions__item-title">
+                        </a>
+                        <a class="directions-item" href="#">
+                            <img class="directions-item__img" src="images/directions-item-img.jpg" alt="">
+                            <div class="directions-item__inner">
+                                <div class="directions-item__info">
+                                    <h4 class="directions-item__title">
                                         Греція
-                                    </div>
-                                    <div class="directions__item-advantages">
+                                    </h4>
+                                    <div class="directions-item__advantages">
                                         Європейський комфорт
                                     </div>
                                 </div>
-                                <div class="deriction__item-content">
-                                    <div class="directions__item-text">
-                                        Вас чекають місця неймовірної краси
-                                    </div>
-                                    <div class="directions__item-price">
-                                        Від 275 $
-                                    </div>
-                                </div>
+                                <p class="directions-item__text">
+                                    Вас чекають місця неймовірної краси
+                                </p>
+                                <span class="directions-item__price">
+                                    Від 275 $
+                                </span>
                             </div>
-                        </div>
-                        <div class="directions__item">
-                            <div class="directions__item-img"></div>
-                            <div class="directions__item-inner">
-                                <div class="directions__item-info">
-                                    <div class="directions__item-title">
+                        </a>
+                        <a class="directions-item" href="#">
+                            <img class="directions-item__img" src="images/directions-item-img.jpg" alt="">
+                            <div class="directions-item__inner">
+                                <div class="directions-item__info">
+                                    <h4 class="directions-item__title">
                                         Греція
-                                    </div>
-                                    <div class="directions__item-advantages">
+                                    </h4>
+                                    <div class="directions-item__advantages">
                                         Європейський комфорт
                                     </div>
                                 </div>
-                                <div class="deriction__item-content">
-                                    <div class="directions__item-text">
-                                        Вас чекають місця неймовірної краси
-                                    </div>
-                                    <div class="directions__item-price">
-                                        Від 275 $
-                                    </div>
-                                </div>
+                                <p class="directions-item__text">
+                                    Вас чекають місця неймовірної краси
+                                </p>
+                                <span class="directions-item__price">
+                                    Від 275 $
+                                </span>
                             </div>
-                        </div>
-                        <div class="directions__item">
-                            <div class="directions__item-img"></div>
-                            <div class="directions__item-inner">
-                                <div class="directions__item-info">
-                                    <div class="directions__item-title">
+                        </a>
+                        <a class="directions-item" href="#">
+                            <img class="directions-item__img" src="images/directions-item-img.jpg" alt="">
+                            <div class="directions-item__inner">
+                                <div class="directions-item__info">
+                                    <h4 class="directions-item__title">
                                         Греція
-                                    </div>
-                                    <div class="directions__item-advantages">
+                                    </h4>
+                                    <div class="directions-item__advantages">
                                         Європейський комфорт
                                     </div>
                                 </div>
-                                <div class="deriction__item-content">
-                                    <div class="directions__item-text">
-                                        Вас чекають місця неймовірної краси
-                                    </div>
-                                    <div class="directions__item-price">
-                                        Від 275 $
-                                    </div>
-                                </div>
+                                <p class="directions-item__text">
+                                    Вас чекають місця неймовірної краси
+                                </p>
+                                <span class="directions-item__price">
+                                    Від 275 $
+                                </span>
                             </div>
-                        </div>
-                        <div class="directions__item">
-                            <div class="directions__item-img"></div>
-                            <div class="directions__item-inner">
-                                <div class="directions__item-info">
-                                    <div class="directions__item-title">
+                        </a>
+                        <a class="directions-item" href="#">
+                            <img class="directions-item__img" src="images/directions-item-img.jpg" alt="">
+                            <div class="directions-item__inner">
+                                <div class="directions-item__info">
+                                    <h4 class="directions-item__title">
                                         Греція
-                                    </div>
-                                    <div class="directions__item-advantages">
+                                    </h4>
+                                    <div class="directions-item__advantages">
                                         Європейський комфорт
                                     </div>
                                 </div>
-                                <div class="deriction__item-content">
-                                    <div class="directions__item-text">
-                                        Вас чекають місця неймовірної краси
-                                    </div>
-                                    <div class="directions__item-price">
-                                        Від 275 $
-                                    </div>
-                                </div>
+                                <p class="directions-item__text">
+                                    Вас чекають місця неймовірної краси
+                                </p>
+                                <span class="directions-item__price">
+                                    Від 275 $
+                                </span>
                             </div>
-                        </div>
-                        <div class="directions__item">
-                            <div class="directions__item-img"></div>
-                            <div class="directions__item-inner">
-                                <div class="directions__item-info">
-                                    <div class="directions__item-title">
+                        </a>
+                        <a class="directions-item" href="#">
+                            <img class="directions-item__img" src="images/directions-item-img.jpg" alt="">
+                            <div class="directions-item__inner">
+                                <div class="directions-item__info">
+                                    <h4 class="directions-item__title">
                                         Греція
-                                    </div>
-                                    <div class="directions__item-advantages">
+                                    </h4>
+                                    <div class="directions-item__advantages">
                                         Європейський комфорт
                                     </div>
                                 </div>
-                                <div class="deriction__item-content">
-                                    <div class="directions__item-text">
-                                        Вас чекають місця неймовірної краси
-                                    </div>
-                                    <div class="directions__item-price">
-                                        Від 275 $
-                                    </div>
-                                </div>
+                                <p class="directions-item__text">
+                                    Вас чекають місця неймовірної краси
+                                </p>
+                                <span class="directions-item__price">
+                                    Від 275 $
+                                </span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <section class="subcsribe">
+            <section class="subcsribe bg-cover">
                 <div class="container">
                     <div class="subscribe__inner">
-                        <div class="subcsribe__title">
+                        <h2 class="subcsribe__title">
                             Хочете отримувати самі гарячі пропозиції на e-mail?
-                        </div>
-                        <div class="subcsribe__subtitle">
+                        </h2>
+                        <p class="subcsribe__subtitle-text">
                             Підпишіться на нашу розсилку!
-                        </div>
-                        <div class="subcsribe__form">
-                            <form>
-                                <div class="subcsribe__form-email">
-                                    <input type="email" placeholder="Введіть ваш e-mail" required>
-                                </div>
-                                <div class="subcsribe__form-btn">
-                                    <input type="submit" value="Відправити">
-                                </div>
-                            </form>
-                        </div>
+                        </p>
+                        <form class="subcsribe-form">
+                            <div class="subcsribe-form__email">
+                                <input class="subcsribe-form__input" type="email" placeholder="Введіть ваш e-mail"
+                                    required>
+                            </div>
+                            <button class="btn subcsribe-form-btn" type="submit">Відправити</button>
+                        </form>
                     </div>
                 </div>
             </section>
 
-            <section class="`">
+            <section class="reviews">
                 <div class="container">
-                    <div class="reviews__title title">
+                    <h2 class="title">
                         Відгуки про нас
-                    </div>
-                    <div class="reviews__slider-wrapper">
-                        <div class="reviews__slider">
-                            <div class="reviews__slider-item">
-                                <div class="reviews__slider-image"></div>
-                                <div class="reviews__slider-inner">
-                                    <div class="reviews__slider-main">
-                                        <div class="reviews__slider-name">
+                    </h2>
+                    <div class="reviews-slider-wrapper">
+                        <div class="reviews-slider">
+                            <div class="reviews-slider__item">
+                                <img class="reviews-slider__image" src="images/reviews-slider-img.jpg" alt="">
+                                <div class="reviews-slider__inner">
+                                    <div class="reviews-slider__main">
+                                        <span class="reviews-slider__name">
                                             Ирина Иванова
-                                        </div>
-                                        <div class="reviews__slider-rate"></div>
+                                        </span>
+                                        <div class="reviews-slider__rate"></div>
                                     </div>
-                                    <div class="reviews__slider-comment">
+                                    <p class="reviews-slider__comment">
                                         Муниципалитет в Испании, входит в провинцию Валенсия в составе автономного
                                         сообщества
                                         Валенсия
@@ -499,22 +550,22 @@
                                         Занимает площадь 80,5 км². Население 6546 человек (на 2010 год). Расстояние до
                                         административного
                                         центра провинции — 41 км.
-                                    </div>
-                                    <div class="reviews__slider-link">
-                                        <a href="#">Залишити відгук</a>
+                                    </p>
+                                    <div class="reviews-slider__link-wrapper">
+                                        <a class="reviews-slider__link" href="#">Залишити відгук</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="reviews__slider-item">
-                                <div class="reviews__slider-image"></div>
-                                <div class="reviews__slider-inner">
-                                    <div class="reviews__slider-main">
-                                        <div class="reviews__slider-name">
+                            <div class="reviews-slider__item">
+                                <img class="reviews-slider__image" src="images/reviews-slider-img.jpg" alt="">
+                                <div class="reviews-slider__inner">
+                                    <div class="reviews-slider__main">
+                                        <span class="reviews-slider__name">
                                             Кристина Орешек
-                                        </div>
-                                        <div class="reviews__slider-rate"></div>
+                                        </span>
+                                        <div class="reviews-slider__rate"></div>
                                     </div>
-                                    <div class="reviews__slider-comment">
+                                    <p class="reviews-slider__comment">
                                         Муниципалитет в Испании, входит в провинцию Валенсия в составе автономного
                                         сообщества
                                         Валенсия
@@ -523,33 +574,34 @@
                                         Занимает площадь 80,5 км². Население 6546 человек (на 2010 год). Расстояние до
                                         административного
                                         центра провинции — 41 км.
-                                    </div>
-                                    <div class="reviews__slider-link">
-                                        <a href="#">Залишити відгук</a>
+                                        Муниципалитет в Испании, входит в провинцию Валенсия в составе автономного
+                                        сообщества
+                                        Валенсия
+                                        (автономное сообщество). Муниципалитет находится в составе района (комарки)
+                                        Рибера-Альта.
+                                        Занимает площадь 80,5 км². Население 6546 человек (на 2010 год). Расстояние до
+                                        административного
+                                        центра провинции — 41 км.
+                                    </p>
+                                    <div class="reviews-slider__link-wrapper">
+                                        <a class="reviews-slider__link" href="#">Залишити відгук</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="reviews__slider-item">
-                                <div class="reviews__slider-image"></div>
-                                <div class="reviews__slider-inner">
-                                    <div class="reviews__slider-main">
-                                        <div class="reviews__slider-name">
+                            <div class="reviews-slider__item">
+                                <img class="reviews-slider__image" src="images/reviews-slider-img.jpg" alt="">
+                                <div class="reviews-slider__inner">
+                                    <div class="reviews-slider__main">
+                                        <span class="reviews-slider__name">
                                             Арсен Новиков
-                                        </div>
-                                        <div class="reviews__slider-rate"></div>
+                                        </span>
+                                        <div class="reviews-slider__rate"></div>
                                     </div>
-                                    <div class="reviews__slider-comment">
-                                        Муниципалитет в Испании, входит в провинцию Валенсия в составе автономного
-                                        сообщества
-                                        Валенсия
-                                        (автономное сообщество). Муниципалитет находится в составе района (комарки)
-                                        Рибера-Альта.
-                                        Занимает площадь 80,5 км². Население 6546 человек (на 2010 год). Расстояние до
-                                        административного
-                                        центра провинции — 41 км.
-                                    </div>
-                                    <div class="reviews__slider-link">
-                                        <a href="#">Залишити відгук</a>
+                                    <p class="reviews-slider__comment">
+                                        Мун
+                                    </p>
+                                    <div class="reviews-slider__link-wrapper">
+                                        <a class="reviews-slider__link" href="#">Залишити відгук</a>
                                     </div>
                                 </div>
                             </div>
@@ -560,30 +612,42 @@
 
             <section class="contacts">
                 <div class="contacts__wrapper">
-                    <div class="contacts__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.684984368846!2d30.354905815729225!3d50.39107067946719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca36dcad6f1f%3A0xb0417b4c19f06190!2z0LLRg9C70LjRhtGPINCa0LjRl9Cy0YHRjNC60LAsIDIsINCS0LjRiNC90LXQstC1LCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA4MTMy!5e0!3m2!1sru!2sua!4v1573081766847!5m2!1sru!2sua"
-                            style="border:0;" allowfullscreen=""></iframe>
-                    </div>
                     <div class="container">
-                        <div class="contacts__info">
-                            <div class="contacts__info-communication">
-                                <div class="info-communication__title">Контакти</div>
-                                <ul class="contacts__info-list">
-                                    <li class="contacts__info-adress"><a href="#">м.Київ, вул.Київська, 2А</a></li>
-                                    <li class="contacts__info-number"><a href="tel:380999999999">+38(099)99-99-999</a>
-                                    </li>
-                                    <li class="contacts__info-email"><a href="#">tourism555@gmail.com</a></li>
-                                </ul>
-                            </div>
-                            <div class="contacts__info-socials">
-                                <div class="info-communication__title">Соціальні мережі</div>
-                                <ul>
-                                    <li><a class="icon-facebook" href="#"></a></li>
-                                    <li><a class="icon-instagram" href="#"></a></li>
-                                    <li><a class="icon-google" href="#"></a></li>
-                                </ul>
-                            </div>
+
+                        <div class="contacts-info">
+                            <h3 class="contacts-info__title">Контакти</h3>
+                            <ul class="contacts-info__comunication-list">
+                                <li class="contacts-info__comunication-item contacts-info__adress">
+                                    <a class="contacts-info__comunication-link" href="#">м.Київ, вул.Київська, 2А</a>
+                                </li>
+                                <li class="contacts-info__comunication-item contacts-info__number">
+                                    <a class="contacts-info__comunication-link"
+                                        href="tel:380999999999">+38(099)99-99-999</a>
+                                </li>
+                                <li class="contacts-info__comunication-item contacts-info__email">
+                                    <a class="contacts-info__comunication-link" href="#">tourism555@gmail.com</a>
+                                </li>
+                            </ul>
+
+                            <h3 class="contacts-info__title">Соціальні мережі</h3>
+
+                            <ul class="contacts-info__social-list">
+                                <li class="contacts-info__social-item">
+                                    <a class="contacts-info__social-link icon-facebook" href="#"></a>
+                                </li>
+                                <li class="contacts-info__social-item">
+                                    <a class="contacts-info__social-link icon-instagram" href="#"></a>
+                                </li>
+                                <li class="contacts-info__social-item">
+                                    <a class="contacts-info__social-link icon-google" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="contacts-map">
+                            <iframe class="contacts-map__frame"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.684984368846!2d30.354905815729225!3d50.39107067946719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca36dcad6f1f%3A0xb0417b4c19f06190!2z0LLRg9C70LjRhtGPINCa0LjRl9Cy0YHRjNC60LAsIDIsINCS0LjRiNC90LXQstC1LCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA4MTMy!5e0!3m2!1sru!2sua!4v1573081766847!5m2!1sru!2sua"
+                                style="border:0;" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
@@ -592,20 +656,30 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <div class="footer__copy">
-                        2019 (c) Название компании
-                    </div>
-                    <div class="foter__socials">
-                        <ul>
-                            <li><a class="foter__social-facebook icon-facebook" href="#"></a></li>
-                            <li><a class="foter__social-instagram icon-instagram" href="#"></a></li>
-                            <li><a class="foter__social-google icon-google" href="#"></a></li>
+                    <span class="footer__copy">2019 (c) Название компании</span>
+                    <div class="footer-socials">
+                        <ul class="footer-socials__list">
+                            <li class="footer-socials__item">
+                                <a class="footer-socials__link foter__social-facebook icon-facebook" href="#">
+                                    <span class="footer-socials__link-text">facebook</span>
+                                </a>
+                            </li>
+                            <li class="footer-socials__item">
+                                <a class="footer-socials__link foter__social-instagram icon-instagram" href="#">
+                                    <span class="footer-socials__link-text">instagram</span>
+                                </a>
+                            </li>
+                            <li class="footer-socials__item">
+                                <a class="footer-socials__link foter__social-google icon-google" href="#">
+                                    <span class="footer-socials__link-text">google пошта</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
-                    <a href="https://www.otpusk.com/" title="Поиск предоставлен Otpusk.com"><img src="https://www.otpusk.com/img/os/otpusk-logo.png" alt="Поиск предоставлен Otpusk.com" /></a>
+        <!--                     <a href="https://www.otpusk.com/" title="Поиск предоставлен Otpusk.com"><img src="https://www.otpusk.com/img/os/otpusk-logo.png" alt="Поиск предоставлен Otpusk.com" /></a> -->
 
     </div>
 
@@ -613,7 +687,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
-    <script>
+    <!--     <script>
         var osDefaultDeparture = ''; /* ID города или название на языке модуля */
         var osDefaultDuration = ''; /* Начальная длительность в днях */
         var osTarget = ''; /* URL для отправки формы */
@@ -628,7 +702,7 @@
 
     <script src="https://export.otpusk.com/api/session?access_token=2ea90-704ed-3a4c1-c7cdb-5e7f6"></script>
     <script src="https://export.otpusk.com/js/onsite/"></script>
-    <script src="https://export.otpusk.com/js/order"></script>
+    <script src="https://export.otpusk.com/js/order"></script> -->
 
 
     <script src="js/jquery.formstyler.min.js"></script>

@@ -1,1 +1,26 @@
-$orange: #f86738
+$color-black: #000;
+$color-white: #fff;
+$orange: #f86738;
+
+
+$fonts-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol";
+$CenturyGothic-regular: "CenturyGothic-regular", $fonts-default;
+$CenturyGothic-semiBold: "CenturyGothic-semiBold", $fonts-default;
+$CenturyGothic-semiBoldCoursive: "CenturyGothic-semiBoldCoursive", $fonts-default;
+$CenturyGothic-coursive: "CenturyGothic-coursive", $fonts-default;
+
+$Roboto-black: "Roboto-black", $fonts-default;
+
+$Impact-regular: "Impact-Regular", $fonts-default;
+
+
+
+$container-width: 120rem;
+$min-width: 32rem;
+
+
+$laptop-width: 1179px;
+$tablet-width: 1023px;
+$mobile-width: 767px;
+$mobile-width-small: 375px;
