@@ -24,30 +24,30 @@
 <body>
     <div class="site-wrapper">
         <div class="site-content">
-            <!--             <header class="header bg-cover">
+            <header class="header bg-cover">
                 <div class="container">
-                    <nav class="navigation">
+                    <nav class="navigation" id="navigation">
                         <div class="logo">
-                            <span class="logo__slogan">LOGOTYPE</span>
+                            <span class="logo__slogan">Tourism</span>
                         </div>
                         <button class="btn btn-burger-menu">
                             <span class="icon-menu"></span>
                         </button>
                         <ul class="navigation__list">
                             <li class="navigation__list-item">
-                                <a class="navigation__list-link" href="#">Пошук турів</a>
+                                <a class="navigation__list-link" href="#" onclick="navigateScroll(this)">Пошук турів</a>
                             </li>
                             <li class="navigation__list-item">
-                                <a class="navigation__list-link" href="#">Гарячі тури</a>
+                                <a class="navigation__list-link" href="#travel-tour" onclick="navigateScroll(this)">Гарячі тури</a>
                             </li>
                             <li class="navigation__list-item">
-                                <a class="navigation__list-link" href="#">Популярні напрямки</a>
+                                <a class="navigation__list-link" href="#directions" onclick="navigateScroll(this)">Популярні напрямки</a>
                             </li>
                             <li class="navigation__list-item">
-                                <a class="navigation__list-link" href="#">Відгуки</a>
+                                <a class="navigation__list-link" href="#reviews" onclick="navigateScroll(this)">Відгуки</a>
                             </li>
                             <li class="navigation__list-item">
-                                <a class="navigation__list-link" href="#">Контакти</a>
+                                <a class="navigation__list-link" href="#contacts" onclick="navigateScroll(this)">Контакти</a>
                             </li>
                         </ul>
                     </nav>
@@ -61,19 +61,19 @@
                         </div>
                     </div>
                 </div>
-            </header> -->
+            </header>
 
             <section class="travels" id="travel-tour">
                 <div class="container">
 
-                    <div class="travels__filter">
-                        <div class="travels__filter-category">
-                            <a class="travels__filter-link" href="#">Пакетні тури</a>
-                            <a class="travels__filter-link" href="#">Екскурсійні тури</a>
-                            <a class="travels__filter-link" href="#">чартери</a>
+<!--                     <div class="travels-filter">
+                        <div class="travels-filter__category">
+                            <a class="travels-filter__category-link" href="#">Пакетні тури</a>
+                            <a class="travels-filter__category-link" href="#">Екскурсійні тури</a>
+                            <a class="travels-filter__category-link" href="#">чартери</a>
                         </div>
-                        <div class="travels__filter-items">
-                            <div class="travels__filter-item filter-item__from">
+                        <div class="travels-filter__items">
+                            <div class="travels-filter__item filter-item__from">
                                 <label>Звідки</label>
                                 <select>
                                     <option value="kiev">Київ</option>
@@ -81,7 +81,7 @@
                                     <option value="kharkiv">Харків</option>
                                 </select>
                             </div>
-                            <div class="travels__filter-item filter-item__to">
+                            <div class="travels-filter__item filter-item__to">
                                 <label>Куди</label>
                                 <select>
                                     <option value="chernihiv">Чернігів</option>
@@ -89,12 +89,12 @@
                                     <option value="kharkiv">Харків</option>
                                 </select>
                             </div>
-                            <div class="travels__filter-item filter-item__date">
+                            <div class="travels-filter__item filter-item__date">
                                 <label>Дата вильоту</label>
                                 <input type="text" value="25.10 - 30.10">
                                 <span></span>
                             </div>
-                            <div class="travels__filter-item filter-item__days">
+                            <div class="travels-filter__item filter-item__days">
                                 <label>Ночей</label>
                                 <div class="item__days-count">
                                     <span>від</span>
@@ -111,9 +111,12 @@
                                     </select>
                                 </div>
                             </div>
-                            <button class="btn travels__filter-btn" type="submit">Знайти</button>
+                            <button class="btn travels-filter__btn" type="submit">Знайти</button>
                         </div>
-                    </div>
+                    </div> -->
+                    <script src="https://export.otpusk.com/api/session?access_token=2ea90-704ed-3a4c1-c7cdb-5e7f6"></script>
+                    <script src="https://export.otpusk.com/js/onsite/"></script>
+                    <script src="https://export.otpusk.com/js/order"></script>
 
                     <h2 class="travels__title title">
                         <span class="travels__title-text">Гарячі тури</span>
@@ -381,7 +384,7 @@
                 </div>
             </section>
 
-            <section class="directions">
+            <section class="directions" id="directions">
                 <div class="container">
                     <h2 class="title">
                         Популярні напрямки
@@ -525,7 +528,7 @@
                 </div>
             </section>
 
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <div class="container">
                     <h2 class="title">
                         Відгуки про нас
@@ -551,9 +554,7 @@
                                         административного
                                         центра провинции — 41 км.
                                     </p>
-                                    <div class="reviews-slider__link-wrapper">
-                                        <a class="reviews-slider__link" href="#">Залишити відгук</a>
-                                    </div>
+                                    <a class="reviews-slider__link" href="#">Залишити відгук</a>
                                 </div>
                             </div>
                             <div class="reviews-slider__item">
@@ -583,9 +584,7 @@
                                         административного
                                         центра провинции — 41 км.
                                     </p>
-                                    <div class="reviews-slider__link-wrapper">
-                                        <a class="reviews-slider__link" href="#">Залишити відгук</a>
-                                    </div>
+                                    <a class="reviews-slider__link" href="#">Залишити відгук</a>
                                 </div>
                             </div>
                             <div class="reviews-slider__item">
@@ -600,9 +599,7 @@
                                     <p class="reviews-slider__comment">
                                         Мун
                                     </p>
-                                    <div class="reviews-slider__link-wrapper">
-                                        <a class="reviews-slider__link" href="#">Залишити відгук</a>
-                                    </div>
+                                    <a class="reviews-slider__link" href="#">Залишити відгук</a>
                                 </div>
                             </div>
                         </div>
@@ -610,7 +607,7 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="contacts__wrapper">
                     <div class="container">
 
@@ -679,15 +676,18 @@
                 </div>
             </div>
         </footer>
-        <!--                     <a href="https://www.otpusk.com/" title="Поиск предоставлен Otpusk.com"><img src="https://www.otpusk.com/img/os/otpusk-logo.png" alt="Поиск предоставлен Otpusk.com" /></a> -->
-
+        <button id="back-to-top" class="btn back-to-top" role="button" data-toggle="tooltip" data-placement="left">
+            <svg class="back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 28 28">
+                <path d="M26.297 20.797l-2.594 2.578c-0.391 0.391-1.016 0.391-1.406 0l-8.297-8.297-8.297 8.297c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.578c-0.391-0.391-0.391-1.031 0-1.422l11.594-11.578c0.391-0.391 1.016-0.391 1.406 0l11.594 11.578c0.391 0.391 0.391 1.031 0 1.422z"></path>
+             </svg>
+        </button>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
-    <!--     <script>
+        <script>
         var osDefaultDeparture = ''; /* ID города или название на языке модуля */
         var osDefaultDuration = ''; /* Начальная длительность в днях */
         var osTarget = ''; /* URL для отправки формы */
@@ -699,11 +699,6 @@
         var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
         var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
     </script>
-
-    <script src="https://export.otpusk.com/api/session?access_token=2ea90-704ed-3a4c1-c7cdb-5e7f6"></script>
-    <script src="https://export.otpusk.com/js/onsite/"></script>
-    <script src="https://export.otpusk.com/js/order"></script> -->
-
 
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
