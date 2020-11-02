@@ -30,5 +30,6 @@
              url('#{$src}.ttf') format('ttf');
         font-style: $style;
         font-weight: $weight;
+        font-display: swap;
     }
 }
