@@ -1,7 +1,7 @@
-@include fontFace('CenturyGothic-regular', '../fonts/Century-Gothic/GOTHIC');
-@include fontFace('CenturyGothic-semiBold', '../fonts/Century-Gothic/GOTHICB');
-@include fontFace('CenturyGothic-semiBoldCoursive', '../fonts/Century-Gothic/GOTHICBI');
-@include fontFace('CenturyGothic-coursive', '../fonts/Century-Gothic/GOTHICI');
+@include fontFace('CenturyGothic-regular', '../fonts/Century-Gothic/CenturyGothic');
+@include fontFace('CenturyGothic-semiBold', '../fonts/Century-Gothic/CenturyGothic-Bold');
+@include fontFace('CenturyGothic-semiBoldCoursive', '../fonts/Century-Gothic/CenturyGothic-BoldItalic');
+@include fontFace('CenturyGothic-coursive', '../fonts/Century-Gothic/CenturyGothic-Italic');
 
 @include fontFace('Roboto-black', '../fonts/Roboto/Robotoblack');
 
