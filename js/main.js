@@ -20,9 +20,7 @@ $(function () {
             },
         ]
     });
-    $(function () {
-        $('input[type="text"],select').styler();
-    });
+
     $(".reviews-slider__rate").rateYo({
         rating: 4.5,
         // readOnly: true,
